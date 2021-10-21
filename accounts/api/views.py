@@ -95,4 +95,5 @@ class AccountViewSet(viewsets.ViewSet):
         return Response({
             'success': True,
             'user': UserSerializer(user).data,
-        })
+        }, status=201)
+
